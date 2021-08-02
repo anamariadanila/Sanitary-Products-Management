@@ -1,0 +1,107 @@
+#title {
+  text-align: center;
+  font-family: arial, sans-serif;
+}
+
+#istoric {
+  text-align: center;
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: 3px solid #ddd;
+}
+
+.button {
+  border: none;
+  outline: none;
+  font-size: 11px;
+  font-family: 'Quicksand', sans-serif;
+  color: #f44336;
+  padding: 3px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #f44336;
+  background-color: transparent;
+}
+
+#istoric td,
+#istoric th {
+  border: 1px solid #ddd;
+  /* padding: 8px; */
+}
+
+#istoric th {
+  /* height: 25%; */
+  width: 25%;
+}
+
+#istoric tr {
+  display: flex;
+  /* width: 18vw; */
+}
+
+#istoric td {
+  /* height: 100%; */
+  width: 15vw;
+}
+
+#istoric tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#istoric tr:hover {
+  background-color: #ddd;
+}
+
+#istoric th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #168758;
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #bdc3c7;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+
+#istoric tbody {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  width: 90vw;
+}
+
+@media only screen and (max-width: 1000px) {
+  #istoric tbody {
+    flex-direction: row;
+    width: 90vw;
+  }
+
+  #istoric tr {
+    flex-direction: column;
+  }
+
+  #istoric th {
+    width: 15vw;
+    height: 10vh;
+  }
+
+  #istoric td {
+    height: 100%;
+    width: 15vw;
+    overflow: auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #istoric th {
+    width: 20vw;
+  }
+
+  #istoric td {
+    width: 20vw;
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "short_name": "site-minister",
+  "name": "React minister site App",
+  "icons": [
+    {
+      "src": "MinisterulSanatatii.png",
+      "type": "image/png",
+      "sizes": "285x627"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #cfeeff; */
+  /* justify-content: space-between; */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.headerContainer li {
+  list-style: none;
+  color: #168758;
+  font-size: 2em;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.headerContainer {
+  /* background-color: #cfeeff; */
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px gray solid;
+  margin: 0 1.5em;
+}
+
+.headerContainer__left {
+  flex: 1;
+}
+
+.headerContainer__left ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.headerContainer__left img {
+  height: 10vh;
+}
+
+.headerContainer__left__text {
+  margin-left: 1em;
+}
+
+.headerContainer__right {
+  flex: 1;
+  height: 100%;
+}
+
+.headerContainer__right ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.headerContainer__right li {
+  padding: 2.5vh 0;
+}
+
+.headerContainer__right li:hover {
+  background-color: #cfeeff;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.headerContainer__hamburger {
+  position: absolute;
+  right: 1.5em;
+  top: 1.5em;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 5vh;
+  width: 3em;
+}
+
+.headerContainer__hamburger span {
+  height: 2px;
+  width: 80%;
+  background-color: #168758;
+  border-radius: 10px;
+}
+
+.autentificare {
+  margin: 2em auto;
+  /* height: 70vh; */
+  max-width: fit-content;
+}
+
+.autentificare h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+  margin: 0 2em;
+  margin-bottom: 1em;
+  /* margin-top: 2em; */
+  color: #168758;
+}
+
+.autentificare__container {
+  box-shadow: 5px 5px 15px rgb(177, 177, 177);
+  display: flex;
+  height: 627px;
+  justify-content: center;
+}
+
+.autentificare__container__right {
+  /* width: 35vw; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.autentificare__container form {
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.autentificare__container__right input {
+  width: 70%;
+  height: 3vh;
+  margin-bottom: 1em;
+  border-radius: 10px;
+}
+
+.autentificare__container__right input:hover {
+  background-color: #cfeeff;
+}
+
+.autentificare__container__right button {
+  /* width: 70%; */
+  /* height: 5vh; */
+  background: #4487ee;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.GoogleLoginBtn {
+  width: 70%;
+  height: 5vh;
+  background: #4487ee;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.autentificare__container__right button:hover {
+  background-color: #168758;
+}
+
+.autentificare__container__right__or {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5em 0;
+}
+
+.autentificare__container__right__or span {
+  margin: 0 5px;
+  height: 1px;
+  width: 20%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid gray;
+  margin: 0 1.5em;
+}
+
+.footerContainer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerContainer li {
+  list-style: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .autentificare {
+    height: 65vh;
+  }
+  .autentificare__container {
+    height: 100%;
+  }
+
+  .headerContainer__hamburger {
+    display: flex;
+  }
+  .headerContainer__right {
+    display: none;
+  }
+  .headerContainer__right ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .autentificare__container__left {
+    display: none;
+  }
+  .headerContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+  .headerContainer__right {
+    height: 90vh;
+    width: 100vw;
+  }
+  .headerContainer__right ul {
+    justify-content: space-around;
+    align-items: center;
+  }
+  .headerContainer__right.active {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .headerContainer__left__text {
+    display: none;
+  }
+  .autentificare__container__right {
+    width: 100vw;
+  }
+  .autentificare h1 {
+    /* margin-top: 2em; */
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 2em;
+  }
+  .autentificare {
+    height: auto;
+  }
+  .autentificare__container {
+    height: 70vh;
+  }
+}
+
+.displayNone {
+  display: none;
+}
